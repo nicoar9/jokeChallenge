@@ -14,8 +14,8 @@ class HomeController extends GetxController {
   void fetchJokes() async {
     delay.value = true;
     joke = await _jokeService.getRandomJoke();
+    joke.photoUrl = await _avatarService.getRandomAvatar();
     if (joke != null) {
-      joke.photoUrl = await _avatarService.getRandomAvatar();
       jokesList.add(joke);
       joke.likes = 0;
       visibleText = false;
