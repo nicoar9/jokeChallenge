@@ -7,8 +7,9 @@ void main() => runApp(
       GetMaterialApp(
         debugShowCheckedModeBanner: false,
         home: LoadingPage(),
-        title: 'Material App',
+        title: 'Jokefy',
         initialRoute: Routes.loading,
         getPages: Pages.pages,
+        theme: ThemeData(accentColor: Colors.purple[300]),
       ),
     );

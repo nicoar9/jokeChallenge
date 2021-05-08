@@ -28,6 +28,9 @@ class HomePage extends StatelessWidget {
                         backgroundColor: Colors.transparent,
                         child: SvgPicture.network(
                           element.photoUrl,
+                          placeholderBuilder: (_) {
+                            return CircularProgressIndicator();
+                          },
                           height: 40,
                         ),
                       ),
