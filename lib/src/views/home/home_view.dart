@@ -1,6 +1,6 @@
 part of app.views;
 
-class HomePage extends StatelessWidget {
+class HomeView extends StatelessWidget {
   final HomeController controller = Get.put(HomeController());
   @override
   Widget build(BuildContext context) {

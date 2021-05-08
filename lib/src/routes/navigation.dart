@@ -10,11 +10,11 @@ class Pages {
   static final pages = [
     GetPage(
       name: Routes.loading,
-      page: () => LoadingPage(),
+      page: () => LoadingView(),
     ),
     GetPage(
       name: Routes.home,
-      page: () => HomePage(),
+      page: () => HomeView(),
     ),
   ];
 }

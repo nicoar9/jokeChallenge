@@ -1,6 +1,6 @@
 part of app.views;
 
-class LoadingPage extends StatelessWidget {
+class LoadingView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetBuilder(

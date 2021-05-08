@@ -5,9 +5,7 @@ class LoadingController extends GetxController {
   void onReady() {
     super.onReady();
     Future.delayed(Duration(seconds: 2), () {
-      Get.off(
-        HomePage(),
-      );
+      Get.offNamed(Routes.home);
     });
   }
 }
